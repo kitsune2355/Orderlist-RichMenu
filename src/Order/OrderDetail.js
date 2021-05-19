@@ -36,8 +36,13 @@ const OrderDetail = () => {
   return (
     <div >
     <div class="container-fluid">
-        <div class="row">
-            kiki
+        <div class="row d-flex justify-content-between">
+            <div className="col-12">
+                what
+            </div>
+            <div className="col-12">
+                what
+            </div>
         </div>
     </div>
           <p>ประเภทการรับสินค้า : {order.receive_channel}</p>
