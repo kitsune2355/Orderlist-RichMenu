@@ -43,21 +43,21 @@ const OrderDetail = () => {
         </div>
         <div class="row mx-2 mt-5 pb-2 line">
             <div className="col-12 px-0 d-flex justify-content-between">
-                <div>ประเภทการรับสินค้า : </div>
+                <strong>ประเภทการรับสินค้า : </strong>
                 <div>{order.receive_channel}</div>
             </div>
         </div>
         <div class="row mx-2 mt-3 pb-2 line">
             <div className="col-12 px-0 d-flex justify-content-between">
-                <div>ราคาของออเดอร์ : </div>
+                <strong>ราคาของออเดอร์ : </strong>
                 <div>{order.sum_price}</div>
             </div>
             <div className="col-12 px-0 d-flex justify-content-between">
-                <div>ค่าส่ง : </div>
+                <strong>ค่าส่ง : </strong>
                 <div>{order.delivery_cost}</div>
             </div>
             <div className="col-12 px-0 d-flex justify-content-between">
-                <div>ส่วนลดค่าส่ง : </div>
+                <strong>ส่วนลดค่าส่ง : </strong>
                 <div>{order.discount_delievry_cost}</div>
             </div>
             
@@ -65,17 +65,17 @@ const OrderDetail = () => {
 
         <div class="row mx-2 mt-3 pb-2 line">
             <div className="col-12 px-0 pb-2 d-flex justify-content-between">
-                <div>ช่องการการชำระ : </div>
+                <strong>ช่องการการชำระ : </strong>
                 <div>{order.payment_channel_name}</div>
             </div>
         </div>
         <div class="row mx-2 mt-3 pb-2 ">
             <div className="col-12 px-0 pb-2 ">
-                <div>ที่อยู่ที่จัดส่ง : </div>
+                <strong>ที่อยู่ที่จัดส่ง : </strong>
                 <div>&emsp;{order.mem_address}</div>
             </div>
             <div className="col-12 px-0 ">
-                <div>สินค้าทั้งหมด : </div>
+                <strong>สินค้าทั้งหมด : </strong>
                 <div>&emsp;{product.pr_name}</div>
                 <div>&emsp;{productTwo.pr_name}</div>
             </div>
