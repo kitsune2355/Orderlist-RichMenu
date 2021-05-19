@@ -33,15 +33,22 @@ const OrderDetail = () => {
   if (loading === true) {
     return <div>loading...</div>
   }
-  return <div >
-            <p>ประเภทการรับสินค้า : {order.receive_channel}</p>
-            <p>ราคาของออเดอร์ : {order.sum_price} บาท</p>
-            <p>ค่าส่ง : {order.delivery_cost} บาท</p>
-            <p>ส่วนลดค่าส่ง : {order.discount_delievry_cost} บาท</p>
-            <p>ช่องการการชำระ : {order.payment_channel_name}</p>
-            <p>ที่อยู่ที่จัดส่ง : {order.mem_address}</p>
-            <p>สินค้าทั้งหมด : {product.pr_name}</p>
+  return (
+    <div >
+    <div class="container-fluid">
+        <div class="row">
+            kiki
         </div>
+    </div>
+          <p>ประเภทการรับสินค้า : {order.receive_channel}</p>
+          <p>ราคาของออเดอร์ : {order.sum_price} บาท</p>
+          <p>ค่าส่ง : {order.delivery_cost} บาท</p>
+          <p>ส่วนลดค่าส่ง : {order.discount_delievry_cost} บาท</p>
+          <p>ช่องการการชำระ : {order.payment_channel_name}</p>
+          <p>ที่อยู่ที่จัดส่ง : {order.mem_address}</p>
+          <p>สินค้าทั้งหมด : {product.pr_name}</p>
+      </div>
+  )
 };
 
 export default OrderDetail
