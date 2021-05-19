@@ -76,8 +76,14 @@ const OrderDetail = () => {
             </div>
             <div className="col-12 px-0 ">
                 <strong>สินค้าทั้งหมด : </strong>
-                <div>&emsp;{product.pr_name}</div>
-                <div>&emsp;{productTwo.pr_name}</div>
+                <div className="col-12 px-0 d-flex justify-content-between">
+                    <div>&emsp;{product.pr_name}</div>
+                    <div>&emsp;{product.price}</div>
+                </div>
+                <div className="col-12 px-0 d-flex justify-content-between">
+                    <div>&emsp;{productTwo.pr_name}</div>
+                    <div>&emsp;{productธไน.price}</div>
+                </div>
             </div>
         </div>
     </div>
