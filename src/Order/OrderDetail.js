@@ -48,7 +48,7 @@ const OrderDetail = () => {
             </div>
         </div>
         
-        <div class="row mx-2 mt-3 pb-2 line">
+        <div class="row mx-2 mt-3 pb-2">
             <div className="col-12 px-0 d-flex justify-content-between">
                 <strong>ค่าส่ง : </strong>
                 <div>{order.delivery_cost}</div>
@@ -57,34 +57,9 @@ const OrderDetail = () => {
                 <strong>ส่วนลดค่าส่ง : </strong>
                 <div>{order.discount_delievry_cost}</div>
             </div>
-            <div class="row mx-2 mt-3 pb-2 ">
-                <strong>สินค้าทั้งหมด : </strong>
-                <div className="col-12 px-0 d-flex justify-content-between">
-                    <div>&emsp;{product.pr_name}</div>
-                    <div>&emsp;{product.price}</div>
-                </div>
-                <div className="col-12 px-0 d-flex justify-content-between">
-                    <div>&emsp;{productTwo.pr_name}</div>
-                    <div>&emsp;{productTwo.price}</div>
-                </div>
-        </div>
-            <div className="col-12 px-0 d-flex justify-content-between">
-                <strong>ราคาของออเดอร์ : </strong>
-                <div>{order.sum_price}</div>
-            </div>
         </div>
 
-        <div class="row mx-2 mt-3 pb-2 line">
-            <div className="col-12 px-0 pb-2 d-flex justify-content-between">
-                <strong>ช่องการการชำระ : </strong>
-                <div>{order.payment_channel_name}</div>
-            </div>
-        </div>
-        <div class="row mx-2 mt-3 pb-2 ">
-            <div className="col-12 px-0 pb-2 ">
-                <strong>ที่อยู่ที่จัดส่ง : </strong>
-                <div>&emsp;{order.mem_address}</div>
-            </div>
+        <div class="row mx-2 pb-2 ">
             <div className="col-12 px-0 ">
                 <strong>สินค้าทั้งหมด : </strong>
                 <div className="col-12 px-0 d-flex justify-content-between">
@@ -95,6 +70,26 @@ const OrderDetail = () => {
                     <div>&emsp;{productTwo.pr_name}</div>
                     <div>&emsp;{productTwo.price}</div>
                 </div>
+            </div>
+        </div>
+
+        <div class="row mx-2 pb-2">
+            <div className="col-12 px-0 d-flex justify-content-between">
+                <strong>ราคาของออเดอร์ : </strong>
+                <div>{order.sum_price}</div>
+            </div>
+        </div>
+
+        <div class="row mx-2 pb-2 line">
+            <div className="col-12 px-0 pb-2 d-flex justify-content-between">
+                <strong>ช่องการการชำระ : </strong>
+                <div>{order.payment_channel_name}</div>
+            </div>
+        </div>
+        <div class="row mx-2 mt-3 pb-2 ">
+            <div className="col-12 px-0 pb-2 ">
+                <strong>ที่อยู่ที่จัดส่ง : </strong>
+                <div>&emsp;{order.mem_address}</div>
             </div>
         </div>
     </div>
