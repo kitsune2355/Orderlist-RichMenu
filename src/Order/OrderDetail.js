@@ -48,7 +48,7 @@ const OrderDetail = () => {
             </div>
         </div>
 
-        <div class="row mx-2 pb-2 ">
+        <div class="row mx-2 mt-3 pb-2 ">
             <div className="col-12 px-0 ">
                 <strong>สินค้าทั้งหมด : </strong>
                 <div className="col-12 px-0 d-flex justify-content-between">
@@ -62,14 +62,14 @@ const OrderDetail = () => {
             </div>
         </div>
         
-        <div class="row mx-2 mt-3 pb-2">
+        <div class="row mx-2 pb-2">
             <div className="col-12 px-0 d-flex justify-content-between">
                 <strong>ค่าส่ง : </strong>
                 <div>{order.delivery_cost}</div>
             </div>
             <div className="col-12 px-0 d-flex justify-content-between">
                 <strong>ส่วนลดค่าส่ง : </strong>
-                <div>{order.discount_delievry_cost}</div>
+                <div>-{order.discount_delievry_cost}</div>
             </div>
         </div>
 
