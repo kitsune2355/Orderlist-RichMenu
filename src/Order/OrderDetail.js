@@ -58,7 +58,6 @@ const OrderDetail = () => {
                 <div>{order.discount_delievry_cost}</div>
             </div>
             <div class="row mx-2 mt-3 pb-2 ">
-            <div className="col-12 px-0 ">
                 <strong>สินค้าทั้งหมด : </strong>
                 <div className="col-12 px-0 d-flex justify-content-between">
                     <div>&emsp;{product.pr_name}</div>
@@ -68,7 +67,6 @@ const OrderDetail = () => {
                     <div>&emsp;{productTwo.pr_name}</div>
                     <div>&emsp;{productTwo.price}</div>
                 </div>
-            </div>
         </div>
             <div className="col-12 px-0 d-flex justify-content-between">
                 <strong>ราคาของออเดอร์ : </strong>
