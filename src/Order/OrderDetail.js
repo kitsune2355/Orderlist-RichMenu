@@ -47,17 +47,6 @@ const OrderDetail = () => {
                 <div>{order.receive_channel}</div>
             </div>
         </div>
-        
-        <div class="row mx-2 mt-3 pb-2">
-            <div className="col-12 px-0 d-flex justify-content-between">
-                <strong>ค่าส่ง : </strong>
-                <div>{order.delivery_cost}</div>
-            </div>
-            <div className="col-12 px-0 d-flex justify-content-between">
-                <strong>ส่วนลดค่าส่ง : </strong>
-                <div>{order.discount_delievry_cost}</div>
-            </div>
-        </div>
 
         <div class="row mx-2 pb-2 ">
             <div className="col-12 px-0 ">
@@ -70,6 +59,17 @@ const OrderDetail = () => {
                     <div>&emsp;{productTwo.pr_name}</div>
                     <div>&emsp;{productTwo.price}</div>
                 </div>
+            </div>
+        </div>
+        
+        <div class="row mx-2 mt-3 pb-2">
+            <div className="col-12 px-0 d-flex justify-content-between">
+                <strong>ค่าส่ง : </strong>
+                <div>{order.delivery_cost}</div>
+            </div>
+            <div className="col-12 px-0 d-flex justify-content-between">
+                <strong>ส่วนลดค่าส่ง : </strong>
+                <div>{order.discount_delievry_cost}</div>
             </div>
         </div>
 
