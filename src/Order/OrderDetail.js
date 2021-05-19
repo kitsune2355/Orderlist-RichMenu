@@ -82,7 +82,7 @@ const OrderDetail = () => {
                 </div>
                 <div className="col-12 px-0 d-flex justify-content-between">
                     <div>&emsp;{productTwo.pr_name}</div>
-                    <div>&emsp;{productธไน.price}</div>
+                    <div>&emsp;{productTwo.price}</div>
                 </div>
             </div>
         </div>
