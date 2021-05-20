@@ -11,11 +11,11 @@ const OrderDetail = () => {
 
     useEffect(() => {
     axios.post(
-        'https://podsable.com:4017/order-online-bill',
-        {
-            od_online_number: ['OD-ARP17151227','OE-16491111',],
-            lang: 'th'
-        }
+            'https://podsable.com:4017/order-online-bill',
+            {
+                od_online_number: 'OD-ARP17151227',
+                lang: 'th'
+            }
         )
     
     .then((res)=>{
