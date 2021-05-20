@@ -13,7 +13,7 @@ const OrderDetail = () => {
     axios.post(
         'https://podsable.com:4017/order-online-bill',
         {
-            od_online_number: 'OD-ARP17151227',
+            od_online_number: ['OD-ARP17151227','OE-16491111',],
             lang: 'th'
         }
         )
@@ -38,6 +38,7 @@ const OrderDetail = () => {
   }
   return (
     <div class="container-fluid">
+        <div></div>
         <div className="logo">
             <img src="/assets/img_logo.png" />
         </div>
