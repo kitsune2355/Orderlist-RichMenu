@@ -38,15 +38,12 @@ const Search = () => {
         <img src="/assets/img_logo.png" />
       </div>
       <form onSubmit={handleSubmit} style={{display: 'flex',justifyContent:'center'}}>
-        <label>
-          Order ID: <input type="text" value={order.ID} onChange={(e) => setOrder({...order,ID:e.target.value}) } />
-        </label>
-        <input type="submit" value="ค้นหา"/>
+          Order ID: 
+          <input type="text" value={order.ID} onChange={(e) => setOrder({...order,ID:e.target.value}) } />
+          <input type="submit" value="ค้นหา" />
         </form>
         {!order.data ? 
-          <div>
-            ไม่มีข้อมูล
-          </div>
+          <></>
           :
           order.data.map((order, key)=>
             <div className="container-fluid" key={key}>
