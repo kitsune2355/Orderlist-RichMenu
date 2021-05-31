@@ -20,7 +20,7 @@ const OrderDetail = () => {
     
     .then((res)=>{
         setLoading(false);
-        console.log(res.data);
+        console.log(res);
 
         if(res.data.isSuccess === true){
             setOrder(res.data.data[0]);

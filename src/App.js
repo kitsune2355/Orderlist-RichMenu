@@ -1,10 +1,10 @@
 import React from 'react'
-import OrderDetail from './Order/OrderDetail'
+import Search from './Order/Search'
 
 const App = () => {
   return (
     <div>
-      <OrderDetail/>
+      <Search/>
     </div>
   )
 }
