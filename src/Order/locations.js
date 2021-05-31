@@ -6,12 +6,16 @@ const Locations = () => {
     const [location, setLocation] = useState([]);
 
     useEffect(() => {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            console.log("Latitude is :", position.coords.latitude);
+            console.log("Longitude is :", position.coords.longitude);
+
     axios.post(
             'https://podsable.com:4016/branch/full/list_eatin',
             {
                 lang: 'th',
-                lat: '13.7760235',
-                long: '100.5709834',
+                lat: position.coords.latitude,
+                long: position.coords.longitude,
             }
         )
     
@@ -28,6 +32,8 @@ const Locations = () => {
     .catch(() => {
         console.log('error')
     });
+});
+
   },[]);
   if (loading === true) {
     return <div>loading...</div>
@@ -42,7 +48,7 @@ const Locations = () => {
             alignItems: 'center',
             border: '1px solid rgba(0,0,0,0.5)',
             padding: '30px',
-            margin: '20px 0',
+            margin: '20px',
             }}>
           <span>lat : {lo.b_lat}</span>
           <span>long : {lo.b_long}</span>
