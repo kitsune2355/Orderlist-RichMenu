@@ -48,7 +48,7 @@ const Locations = () => {
             alignItems: 'center',
             border: '1px solid rgba(0,0,0,0.5)',
             padding: '30px',
-            margin: '20px',
+            margin: '30px',
             }}>
           <span>lat : {lo.b_lat}</span>
           <span>long : {lo.b_long}</span>
