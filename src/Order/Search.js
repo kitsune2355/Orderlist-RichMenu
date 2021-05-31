@@ -37,10 +37,9 @@ const Search = () => {
       <div className="logo">
         <img src="/assets/img_logo.png" />
       </div>
-      <form onSubmit={handleSubmit} style={{}}>
+      <form onSubmit={handleSubmit} style={{display: 'flex',justifyContent:'center'}}>
         <label>
-          Order ID:
-          <input type="text" value={order.ID} onChange={(e) => setOrder({...order,ID:e.target.value}) } />
+          Order ID: <input type="text" value={order.ID} onChange={(e) => setOrder({...order,ID:e.target.value}) } />
         </label>
         <input type="submit" value="ค้นหา"/>
         </form>
